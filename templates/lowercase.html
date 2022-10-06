@@ -1,0 +1,26 @@
+{% extends "home.html" %}
+{% block content %}
+
+<style>
+h3{
+    text-align: center;
+    color: darkslategray;
+    margin-top: 30px;
+}
+.input{
+    text-align: center;
+    margin-top: 30px;
+
+}
+</style>
+<h3> CONVERT STRING TO LOWERCASE </h3>
+
+<div class="input">
+<form action="/lowercase" method="POST">
+    <input type="text" name="str1">
+    <input type="submit" value="SUBMIT" ><br><br>
+    <h4> String in lowercase :{{result}} </h4>
+</form></div>
+    
+    
+{% endblock %}

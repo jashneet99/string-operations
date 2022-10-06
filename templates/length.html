@@ -1,0 +1,52 @@
+{% extends "home.html" %}
+{% block content %}
+<style>
+h3{
+    text-align: center;
+    margin-top: 30px;
+    color: darkslategray;
+}
+
+.input{
+    text-align: center;
+    margin-top: 30px;
+}
+
+</style>
+<h3>Length of the String </h3>
+<div class="input"><form action="/length" method="POST">
+    <input type="text" name="str1" placeholder="Enter the string"> <br><br>
+    <input type="submit" value="SUBMIT"><br><br>
+
+    <h6> Length of the string : {{length1}} </h6><br>
+    <h6> Number of the alphabets in a string :{{length2}}</h6><br>
+    <h6>Number of the numeric values in string :{{length3}}</h6><br>
+    <h6>Number of the words in a string: {{length4}} </h6><br>
+    
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

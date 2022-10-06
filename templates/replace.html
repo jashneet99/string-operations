@@ -1,0 +1,35 @@
+{% extends "home.html" %}
+{% block content %}
+
+<style>
+
+h3{
+    text-align: center;
+    margin-top: 30px;
+    color: darkslategray;
+}
+
+.input{
+    text-align: center;
+    margin-top: 30px;
+}
+
+</style>
+
+<h3> Replace the String </h3>
+<div class="input"><form action="/replace" method="POST">
+    <input type="text" name="str" placeholder="Enter the string"> <br><br>
+    <h4> Slicing by Index </h4>
+    <input type="text" name="replace_str1" placeholder="Replace string ?"><br><br>
+    <input type="text" name="replace_str2" placeholder="By which string ?"><br><br>
+    <input type="submit" name="Submit"><br><br>
+    <h4> String after replacement : {{replaced_str}}</h4>
+    </div>
+</form>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "home.html" %}
+{% block content %}
+<style>
+h3{
+    text-align: center;
+    margin-top: 30px;
+    color: darkslategray;
+}
+
+.input{
+    text-align: center;
+    margin-top: 30px;
+}
+</style>
+<h3> COMPARE TWO STRINGS </h3>
+<div class="input"><form action="/compare" method="POST">
+    <input type="text" name="str1" placeholder="Enter first string"> <br><br>
+    <input type="text" name="str2" placeholder="Enter second string"><br><br>
+    <input type="submit" value="Compare"><br><br>
+    <h6> Letter-wise(Uppercase/Lowercase): {{letter_wise}} </h6><br>
+    <h4> Meaning-wise : {{meaning_wise}}</h4>
+    </div>
+</form>
+
+{% endblock %}

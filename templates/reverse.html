@@ -1,0 +1,45 @@
+{% extends "home.html"%}
+{% block content %}
+<style>
+
+h3{
+    text-align: center;
+    color: darkslategray;
+    margin: 30px;
+}
+
+.input{
+    text-align: center;
+    margin: 30px;
+}
+</style>
+<h3> Reverse the STRING </h3>
+<div class="input"><form action="/reverse" method="POST">
+    <input type="text" name="str1" placeholder="Enter the string"> <br><br>
+    <input type="submit" value="SUBMIT"><br><br>
+    <h4> Reverse string by character : {{result}} </h4><br>
+    <h4> Reverse string by Words :{{result2}}</h4>
+    
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

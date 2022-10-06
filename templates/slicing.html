@@ -1,0 +1,28 @@
+{% extends "home.html" %}
+{% block content %}
+<style>
+h3{
+    text-align: center;
+    color: darkslategray;
+    margin-top: 30px;
+}
+
+.input{
+    text-align: center;
+    margin-top: 30px;
+}
+
+</style>
+
+<h3> Slicing the String </h3>
+<div class="input"><form action="/slicing" method="POST">
+    <input type="text" name="str" placeholder="Enter the string"> <br><br>
+    <h4> Slicing by Index </h4>
+    <input type="number" name="start" placeholder="Enter starting range"><br><br>
+    <input type="number" name="end" placeholder="Enter the ending range"><br><br>
+    <input type="number" name="steps" placeholder="Enter number of steps"><br><br>
+    <input type="submit" name="Submit"><br><br>
+    <h4> String after Slicing : {{sliced_str}}</h4>
+    </div>
+</form>
+{% endblock %}

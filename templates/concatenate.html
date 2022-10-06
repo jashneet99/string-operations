@@ -1,0 +1,28 @@
+{% extends "home.html" %}
+{% block content %}
+
+<style>
+h3{
+    text-align: center;
+    color: darkslategray;
+    margin-top: 30px;
+}
+
+.input{
+    text-align: center;
+    margin-top: 30px;
+}
+</style>
+
+<h3> CONCATENATE THE STRING </h3>
+<div class="input">
+<form action="/concatenate" method="POST">
+    <input type="text" name="str1" placeholder="Enter string first"><br><br>
+    <input type="text" name="str2" placeholder=" Enter string second"><br><br>
+    <input type="submit" value="SUBMIT" ><br><br>
+    <h4> Strings after concatenate :{{result}} </h4>
+
+</form></div>
+
+
+{% endblock %}

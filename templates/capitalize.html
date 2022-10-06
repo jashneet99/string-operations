@@ -1,0 +1,44 @@
+{% extends "home.html"%}
+{% block content %}
+
+<style>
+h3{
+    text-align: center;
+    color: darkslategrey;
+    margin-top: 30px;
+
+} 
+.input{
+    text-align: center;
+    margin-top: 30px;
+}
+</style>
+
+<h3> CAPITALIZE THE STRING  </h3>
+<div class="input"><form action="/capitalize" method="POST">
+    <input type="text" name="str1">
+    <input type="submit" value="SUBMIT" ><br><br>
+    <h4>
+        After Capitalize the string: {{result}}
+    </h4>
+</form></div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
